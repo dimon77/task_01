@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(this).scrollTop()>30?$("nav").addClass("nav__white"):$("nav").removeClass("nav__white")});

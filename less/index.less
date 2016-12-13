@@ -1,11 +1,67 @@
+// fonts
+@font-face {
+    font-family: "MuseoSans";
+    src: url("../fonts/MuseoSans_300.otf");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "MuseoSans";
+    src: url("../fonts/MuseoSans_500.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "MuseoSans";
+    src: url("../fonts/MuseoSans_700.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "MuseoSans";
+    src: url("../fonts/MuseoSans_900.otf");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "MuseoSlab";
+    src: url("../fonts/MuseoSlab-500.otf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+body,
+input,
+textarea {
+    font-family: "MuseoSans";
+    color: #78909c;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: "MuseoSans";
+}
+// fonts
 .index{
 
 }
 .navbar {
     margin-bottom: 0;
+    .navbar-nav>li>a.signin {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+}
+.signin {
+  margin-top: 13px;
+  margin-left: 14px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  transition: border 0.3s ease-in-out;
 }
 .navbar-right {
     margin-right: 0;
+}
+.nav>li>a {
+    padding: 10px 14px;
 }
 .navbar-nav>li {
     font-size: 17px;
@@ -13,12 +69,14 @@
     // font-family: "MuseoSans";
     font-weight: 300;
     color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 .navbar-brand {
   color: #fff;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   font-size: 31.25px;
-  // font-family: "MuseoSlab";
+  font-family: "MuseoSlab";
   &::first-letter {
     color: #33cc99;
     color: rgb(26, 188, 156);
@@ -39,6 +97,32 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    background-color: transparent;
+    // transition: padding 0.5s ease-in-out, background 0.5s ease-in-out;
+    transition: padding 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    &.nav__white {
+        transition: padding 0.5s ease-in-out, background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #fff;
+        .box-shadow-material(2);
+        .navbar-nav > li {
+            color: #78909c;
+            transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+            text-shadow: 0px 1px 7px rgba(7, 7, 7, 0.15);
+        }
+        .navbar .navbar-brand {
+            color: #78909c;
+            text-shadow: 0px 1px 7px rgba(7, 7, 7, 0.15);
+            transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+        }
+        .signin {
+          border-color: #78909c;
+          transition: border 0.5s ease-in-out;
+        }
+    }
 }
 .firstscreen {
     padding-top: 60px;
@@ -53,6 +137,7 @@ nav {
       text-align: center;
       text-shadow: 0px 1px 7px rgba(7, 7, 7, 0.15);
       margin-top: 14px;
+      font-family: "MuseoSans";
     }
 }
 .textbyh1 {
@@ -71,13 +156,18 @@ nav {
   background-color: rgba(0,0,0,0.1);
   padding: 3px;
   border-radius: 3px;
-  display: inline-block;
+  display: block;
   text-align: center;
   font-size: 16.36px;
   // font-family: "MuseoSans";
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
+  width: 184px;
+  // height: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   &:hover {
     text-decoration: none;
   }
@@ -85,6 +175,11 @@ nav {
     background-color: #33caab;
     background-image: linear-gradient(to bottom,#3bd3ba,#27bc95);
     border-radius: 2px;
+    line-height: 56px;
+      font-size: 18.75px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
   }
 }
 
@@ -95,3 +190,108 @@ nav {
 //   background-image: -ms-linear-gradient( 90deg, rgb(7,7,7) 0%, rgb(255,255,255) 100%);
 //   opacity: 0.1;
 // }
+
+@width-box:1030px;
+.box {
+    width: 100%;
+    max-width: @width-box;
+    margin: 0 auto;
+}
+.halfbox {
+  @width-box-half: @width-box/2;
+  width: 100%;
+  max-width: @width-box-half;
+  margin: 0 auto;
+}
+.greenblock {
+    background-color: #30c6a5;
+    padding-left: 0;
+    padding-right: 0;
+    color: #fff;
+    position: relative;
+    &:before {
+        content:"";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        // margin-top: -10px;
+        // right: -20px;
+        // background-color: #30c6a5;
+        margin-top: -14px;
+        right: -30px;
+        border: 14px solid transparent;
+        border-left: 16px solid #30c6a5;
+        z-index: 3;
+    }
+    .halfbox {
+        margin-right: 0;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #fff;
+        padding-top: 106px;
+        padding-bottom: 18px;
+    }
+    p {
+      font-size: 14.58px;
+      font-weight: 300;
+      letter-spacing: 0.1px;
+      line-height: 1.6;
+      padding-right: 95px;
+      padding-bottom: 70px;
+    }
+}
+.greenbottom {
+      background-color: #1abc9c;
+      font-size: 20.83px;
+      color: #fff;
+      padding: 24px 0;
+      a, a:hover, a:focus {
+          color: #fff;
+      }
+      .fa {
+            margin-right: 6px;
+      }
+
+}
+.screen-3 {
+  padding: 0 15px;
+}
+
+.videobox {
+    height: 438px;
+    position: relative;
+}
+.videobg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../image/videobg.jpg) center no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.videoplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -31px;
+    margin-left: -31px;
+    width: 62px;
+    height: 62px;
+    background: url(../image/play.png) center no-repeat;
+    z-index: 3;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      .box-shadow-material(2);
+    }
+    &:active {
+      transition: 0s;
+      transform: scale(0.9);
+    }
+}
