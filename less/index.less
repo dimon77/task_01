@@ -102,7 +102,7 @@ nav {
     background-color: transparent;
     // transition: padding 0.5s ease-in-out, background 0.5s ease-in-out;
     transition: padding 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    z-index: 3;
+    z-index: 4;
     &.nav__white {
         transition: padding 0.5s ease-in-out, background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
         padding-top: 0;
@@ -227,6 +227,7 @@ nav {
     }
     .halfbox {
         margin-right: 0;
+        max-height: 359px;
     }
     h3 {
         font-weight: 700;
@@ -496,4 +497,183 @@ nav {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
   }
+}
+
+
+//screen4
+.profilebox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 97px;
+    padding-bottom: 101px;
+    h3 {
+      color: #455a64;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    h4 {
+        color: #546e7a;
+        font-size: 14.58px;
+        font-weight: 300;
+        margin-bottom: 9px;
+    }
+    .green {
+        color: #30c6a5;
+    }
+    .line {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.activeprofile {
+    color: #546e7a;
+    font-weight: 500;
+    font-size: 14.58px;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    .green {
+      letter-spacing: 0;
+    }
+}
+
+.profile {
+  &left {
+    width: 71%;
+    padding-right: 1px;
+  }
+  &right {
+    // width: 22.33%;
+    // width: 22.525%;
+    width: 22.53%;
+    .col {
+          margin-top: 35px;
+    }
+  }
+  &table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px #e0e7ee solid;
+    margin-top: 35px;
+    th, td {
+        font-size: 13.54px;
+        font-weight: 500;
+        color: #78909c;
+        text-align: center;
+    }
+    tr {
+      border: 1px #e0e7ee solid;
+      border-bottom: none;
+      height: 98px;
+      th, td {
+        &:nth-child(1) {
+          width: 13.7%;
+          padding-left: 8px;
+        }
+        &:nth-child(2) {
+            width: 22.5%;
+        }
+        &:nth-child(3) {
+            width: 10.6%;
+        }
+        &:nth-child(4) {
+            width: 14.9%;
+        }
+        &:nth-child(5) {
+            width: 15.9%;
+        }
+        &:nth-child(6) {
+            width: 22.4%;
+        }
+      }
+    }
+    .name {
+      font-size: 18.75px;
+      font-weight: 700;
+      text-align: left;
+      line-height: 1.4;
+    }
+    .post {
+      font-weight: 300;
+      font-size: 14.58px;
+      text-align: left;
+    }
+    sup {
+        font-size: 75%;
+    }
+  }
+}
+.viewbtn {
+    color: #30c6a5;
+    border: 1px #30c6a5 solid;
+    border-radius: 3px;
+    letter-spacing: 0.24px;
+    padding: 4.5px 12px 4.5px 12px;
+    /* min-width: 104px; */
+    transition: 0.2s;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      background-color: #30c6a5;
+      color: #fff;
+    }
+    &:active {
+      transition: 0;
+      background-color: darken(#30c6a5, 10%);
+      border-color: darken(#30c6a5, 10%);
+    }
+}
+
+.team {
+    border: 1px #e0e7ee solid;
+    border-radius: 3px;
+    margin-bottom: 39px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .bg {
+      width: 100%;
+      min-height: 223px;
+      display: block;
+      background-color: #455a64;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      background-size: cover !important;
+      background-position: center !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 18.75px;
+      font-family: "MuseoSans";
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.22;
+      letter-spacing: 0.21px;
+      img {
+        margin-bottom: 12px;
+      }
+    }
+    .text {
+      display: flex;
+      justify-content: center;
+      font-size: 13.54px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      padding: 15px 0;
+      .green {
+        padding: 0 6px;
+      }
+      .grey {
+        letter-spacing: 0.3px;
+        padding: 0 6px;
+      }
+    }
+}
+hr {
+    background: #e1e3e4;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 }

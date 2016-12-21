@@ -8511,7 +8511,7 @@ nav {
   -moz-transition: padding 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -moz-box-shadow 0.3s ease-in-out;
   transition: padding 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: padding 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out, -moz-box-shadow 0.3s ease-in-out;
-  z-index: 3;
+  z-index: 4;
 }
 nav.nav__white {
   -webkit-transition: padding 0.5s ease-in-out, background 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
@@ -8640,6 +8640,7 @@ nav.nav__white .signin {
 }
 .greenblock .halfbox {
   margin-right: 0;
+  max-height: 359px;
 }
 .greenblock h3 {
   font-weight: 700;
@@ -8975,4 +8976,242 @@ nav.nav__white .signin {
   -webkit-border-bottom-right-radius: 3px;
      -moz-border-radius-bottomright: 3px;
           border-bottom-right-radius: 3px;
+}
+.profilebox {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 97px;
+  padding-bottom: 101px;
+}
+.profilebox h3 {
+  color: #455a64;
+  font-size: 25px;
+  font-weight: 700;
+}
+.profilebox h4 {
+  color: #546e7a;
+  font-size: 14.58px;
+  font-weight: 300;
+  margin-bottom: 9px;
+}
+.profilebox .green {
+  color: #30c6a5;
+}
+.profilebox .line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.activeprofile {
+  color: #546e7a;
+  font-weight: 500;
+  font-size: 14.58px;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+.activeprofile .green {
+  letter-spacing: 0;
+}
+.profileleft {
+  width: 71%;
+  padding-right: 1px;
+}
+.profileright {
+  width: 22.53%;
+}
+.profileright .col {
+  margin-top: 35px;
+}
+.profiletable {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px #e0e7ee solid;
+  margin-top: 35px;
+}
+.profiletable th,
+.profiletable td {
+  font-size: 13.54px;
+  font-weight: 500;
+  color: #78909c;
+  text-align: center;
+}
+.profiletable tr {
+  border: 1px #e0e7ee solid;
+  border-bottom: none;
+  height: 98px;
+}
+.profiletable tr th:nth-child(1),
+.profiletable tr td:nth-child(1) {
+  width: 13.7%;
+  padding-left: 8px;
+}
+.profiletable tr th:nth-child(2),
+.profiletable tr td:nth-child(2) {
+  width: 22.5%;
+}
+.profiletable tr th:nth-child(3),
+.profiletable tr td:nth-child(3) {
+  width: 10.6%;
+}
+.profiletable tr th:nth-child(4),
+.profiletable tr td:nth-child(4) {
+  width: 14.9%;
+}
+.profiletable tr th:nth-child(5),
+.profiletable tr td:nth-child(5) {
+  width: 15.9%;
+}
+.profiletable tr th:nth-child(6),
+.profiletable tr td:nth-child(6) {
+  width: 22.4%;
+}
+.profiletable .name {
+  font-size: 18.75px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.4;
+}
+.profiletable .post {
+  font-weight: 300;
+  font-size: 14.58px;
+  text-align: left;
+}
+.profiletable sup {
+  font-size: 75%;
+}
+.viewbtn {
+  color: #30c6a5;
+  border: 1px #30c6a5 solid;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  letter-spacing: 0.24px;
+  padding: 4.5px 12px 4.5px 12px;
+  /* min-width: 104px; */
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.viewbtn:hover {
+  text-decoration: none;
+  background-color: #30c6a5;
+  color: #fff;
+}
+.viewbtn:active {
+  -webkit-transition: 0;
+  -o-transition: 0;
+  -moz-transition: 0;
+  transition: 0;
+  background-color: #269d83;
+  border-color: #269d83;
+}
+.team {
+  border: 1px #e0e7ee solid;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  margin-bottom: 39px;
+}
+.team:last-child {
+  margin-bottom: 0;
+}
+.team .bg {
+  width: 100%;
+  min-height: 223px;
+  display: block;
+  background-color: #455a64;
+  -webkit-border-top-left-radius: 2px;
+     -moz-border-radius-topleft: 2px;
+          border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+     -moz-border-radius-topright: 2px;
+          border-top-right-radius: 2px;
+  -webkit-background-size: cover !important;
+     -moz-background-size: cover !important;
+       -o-background-size: cover !important;
+          background-size: cover !important;
+  background-position: center !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18.75px;
+  font-family: "MuseoSans";
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.22;
+  letter-spacing: 0.21px;
+}
+.team .bg img {
+  margin-bottom: 12px;
+}
+.team .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13.54px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  padding: 15px 0;
+}
+.team .text .green {
+  padding: 0 6px;
+}
+.team .text .grey {
+  letter-spacing: 0.3px;
+  padding: 0 6px;
+}
+hr {
+  background: #e1e3e4;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
