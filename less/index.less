@@ -677,3 +677,200 @@ hr {
     max-width: 1170px;
     margin: 0 auto;
 }
+
+
+.reasons {
+    padding-top: 97px;
+    padding-bottom: 116px;
+    display: flex;
+    align-items: stretch;
+  h4 {
+      color: #546e7a;
+      font-size: 14.58px;
+      font-weight: 300;
+      margin-bottom: 9px;
+      letter-spacing: 0.31px;
+  }
+  h3 {
+      color: #455a64;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      padding-bottom: 2px;
+  }
+  &textblock {
+      width: 50%;
+      // background-color: beige;
+      p {
+        font-size: 14.583px;
+        color: #78909c;
+        line-height: 1.58;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+      }
+  }
+  &image {
+      width: 50%;
+      // background-color: bisque;
+      position: relative;
+      img {
+          position: absolute;
+          top: 12px;
+          left: 75px;
+          max-height: 100%;
+          width: auto;
+      }
+  }
+  h5 {
+      font-size: 18.75px;
+      font-weight: 700;
+      color: #546e7a;
+      // line-height: 1.5;
+      line-height: 1;
+      margin-bottom: 11px;
+      margin-top: 32px;
+      .fa {
+        // font-size: 29px;
+        // line-height: 0.8;
+        font-size: 24px;
+        line-height: 1;
+      }
+      svg {
+          transform: translateY(5px);
+          // margin-right: 6px;
+          margin-right: 5px;
+      }
+  }
+}
+.screen-5 {
+    overflow: hidden;
+}
+.slider {
+    overflow-x: hidden;
+    &.slick-dotted.slick-slider{
+        margin-bottom: 0;
+    }
+    .slick {
+      &-prev {
+        left: 25px;
+        z-index: 1;
+      }
+      &-next {
+        right: 25px;
+        z-index: 1;
+      }
+      &-dots {
+        bottom: 56px;
+        // background-color: yellow;
+        z-index: 2;
+        width: 370px;
+        left: 50%;
+        margin-left: -370px/2;
+      }
+      &-track {
+          background-color: #263238;
+          background-color: rgba(38, 50, 56, 0.2);
+      }
+    }
+    .slide {
+        height: 450px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+.screen-6 {
+  position: relative;
+  .bg{
+      background-color: rgba(38, 50, 56, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  .whitecard {
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      width: 370px;
+      left: 50%;
+      margin-left: -370px/2;
+      background-color: #fff;
+      padding: 45px 49px 40px 40px;
+      min-height: 310px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      box-shadow: inset 0px -5px 13px 0px rgba(7, 7, 7, 0.16);
+
+      .round {
+        width: 64px;
+        height: 64px;
+        background-color: #fff;
+        background-image: url(../image/symb.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 2.457px 1.721px 0px 0px rgba(38, 50, 56, 0.1);
+        position: absolute;
+        top: -26px;
+        left: -23px;
+      }
+      p {
+        font-size: 14.58px;
+        color: rgb(120, 144, 156);
+        line-height: 1.571;
+        font-weight: 300;
+      }
+      .name {
+        font-size: 18.75px;
+        color: rgb(69, 90, 100);
+        font-weight: 500;
+        margin-top: 17px;
+      }
+      .post {
+        font-size: 14.58px;
+        color: #30c6a5;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+  }
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    opacity: 1;
+    color: #d7e1e5;
+  }
+  .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: #30c6a5;
+  }
+}
+
+footer {
+    background-color: #fff;
+    .col-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .col {
+      .navbar-brand {
+        color: #546e7a;
+        font-size: 31.25px;
+      }
+      a {
+          display: block;
+          color: #a8b6bc;
+          font-weight: 500;
+          font-size: 13.54px;
+      }
+      h4 {
+          font-size: 18.75px;
+          color: rgb(84, 110, 122);
+          line-height: 1.556;
+          font-weight: 700;
+      }
+    }
+}

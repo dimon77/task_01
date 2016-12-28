@@ -9215,3 +9215,217 @@ hr {
   max-width: 1170px;
   margin: 0 auto;
 }
+.reasons {
+  padding-top: 97px;
+  padding-bottom: 116px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.reasons h4 {
+  color: #546e7a;
+  font-size: 14.58px;
+  font-weight: 300;
+  margin-bottom: 9px;
+  letter-spacing: 0.31px;
+}
+.reasons h3 {
+  color: #455a64;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding-bottom: 2px;
+}
+.reasonstextblock {
+  width: 50%;
+}
+.reasonstextblock p {
+  font-size: 14.583px;
+  color: #78909c;
+  line-height: 1.58;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.reasonsimage {
+  width: 50%;
+  position: relative;
+}
+.reasonsimage img {
+  position: absolute;
+  top: 12px;
+  left: 75px;
+  max-height: 100%;
+  width: auto;
+}
+.reasons h5 {
+  font-size: 18.75px;
+  font-weight: 700;
+  color: #546e7a;
+  line-height: 1;
+  margin-bottom: 11px;
+  margin-top: 32px;
+}
+.reasons h5 .fa {
+  font-size: 24px;
+  line-height: 1;
+}
+.reasons h5 svg {
+  -webkit-transform: translateY(5px);
+     -moz-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+       -o-transform: translateY(5px);
+          transform: translateY(5px);
+  margin-right: 5px;
+}
+.screen-5 {
+  overflow: hidden;
+}
+.slider {
+  overflow-x: hidden;
+}
+.slider.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slider .slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+.slider .slick-next {
+  right: 25px;
+  z-index: 1;
+}
+.slider .slick-dots {
+  bottom: 56px;
+  z-index: 2;
+  width: 370px;
+  left: 50%;
+  margin-left: -185px;
+}
+.slider .slick-track {
+  background-color: #263238;
+  background-color: rgba(38, 50, 56, 0.2);
+}
+.slider .slide {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.screen-6 {
+  position: relative;
+}
+.screen-6 .bg {
+  background-color: rgba(38, 50, 56, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.screen-6 .whitecard {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  left: 50%;
+  margin-left: -185px;
+  background-color: #fff;
+  padding: 45px 49px 40px 40px;
+  min-height: 310px;
+  -webkit-border-top-left-radius: 3px;
+     -moz-border-radius-topleft: 3px;
+          border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+     -moz-border-radius-topright: 3px;
+          border-top-right-radius: 3px;
+  -webkit-box-shadow: inset 0px -5px 13px 0px rgba(7, 7, 7, 0.16);
+     -moz-box-shadow: inset 0px -5px 13px 0px rgba(7, 7, 7, 0.16);
+          box-shadow: inset 0px -5px 13px 0px rgba(7, 7, 7, 0.16);
+}
+.screen-6 .whitecard .round {
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  background-image: url(../image/symb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 2.457px 1.721px 0px 0px rgba(38, 50, 56, 0.1);
+     -moz-box-shadow: 2.457px 1.721px 0px 0px rgba(38, 50, 56, 0.1);
+          box-shadow: 2.457px 1.721px 0px 0px rgba(38, 50, 56, 0.1);
+  position: absolute;
+  top: -26px;
+  left: -23px;
+}
+.screen-6 .whitecard p {
+  font-size: 14.58px;
+  color: #78909c;
+  line-height: 1.571;
+  font-weight: 300;
+}
+.screen-6 .whitecard .name {
+  font-size: 18.75px;
+  color: #455a64;
+  font-weight: 500;
+  margin-top: 17px;
+}
+.screen-6 .whitecard .post {
+  font-size: 14.58px;
+  color: #30c6a5;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.screen-6 .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px;
+  line-height: 20px;
+  opacity: 1;
+  color: #d7e1e5;
+}
+.screen-6 .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #30c6a5;
+}
+footer {
+  background-color: #fff;
+}
+footer .col-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .col .navbar-brand {
+  color: #546e7a;
+  font-size: 31.25px;
+}
+footer .col a {
+  display: block;
+  color: #a8b6bc;
+  font-weight: 500;
+  font-size: 13.54px;
+}
+footer .col h4 {
+  font-size: 18.75px;
+  color: #546e7a;
+  line-height: 1.556;
+  font-weight: 700;
+}
