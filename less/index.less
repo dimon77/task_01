@@ -854,23 +854,158 @@ footer {
     .col-box {
         display: flex;
         justify-content: space-between;
+        padding-top: 77px;
+        padding-bottom: 63px;
     }
     .col {
+      width: 230px;
+      &-big {
+        width: 353px;
+      }
       .navbar-brand {
         color: #546e7a;
         font-size: 31.25px;
+        // margin-left: -16px;
+        // margin-right: 16px;
+        margin-left: -1px;
+        padding-left: 0;
+        width: 100%;
       }
       a {
           display: block;
           color: #a8b6bc;
           font-weight: 500;
           font-size: 13.54px;
+          margin-bottom: 3px;
+          transition: 0.2s ease-in-out;
+      }
+      .item {
+        text-decoration: none;
+        margin-bottom: 21px;
+        &:hover {
+          text-decoration: none;
+          .hdr {
+              text-decoration: underline;
+          }
+        }
+
+        .hdr {
+          text-decoration: none;
+          letter-spacing: 0.55px;
+        }
+        .date {
+          color: #77939f;
+        }
       }
       h4 {
           font-size: 18.75px;
           color: rgb(84, 110, 122);
           line-height: 1.556;
           font-weight: 700;
+          margin-bottom: 18px;
+          padding-top: 18px;
+      }
+    }
+    form {
+          display: flex;
+          font-family: "MuseoSans";
+          margin-top: 11px;
+      input[type="text"] {
+          -webkit-appearance: none;
+          appearance: none;
+          border: none;
+          background-color: #eaebed;
+          font-size: 16.67px;
+          font-weight: 300;
+          font-family: "MuseoSans";
+          padding: 12px 15px 13px 15px;
+          border-radius: 0;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          width: 234px;
+          @placehold: rgb(176, 190, 196);
+          &::-webkit-input-placeholder {
+              color: @placehold;
+          }
+          &::-moz-placeholder {
+              color: @placehold;
+          }
+          /* Firefox 19+ */
+          &:-moz-placeholder {
+              color: @placehold;
+          }
+          /* Firefox 18- */
+          &:-ms-input-placeholder {
+              color: @placehold;
+          }
+      }
+      input[type="submit"] {
+          -webkit-appearance: none;
+          appearance: none;
+          border: none;
+          background-color: #76d8c3;
+          font-size: 16.67px;
+          font-weight: 500;
+          font-family: "MuseoSans";
+          text-transform: uppercase;
+          border-radius: 0;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          padding: 12px 15px 13px 15px;
+          color: #fff;
+      }
+    }
+    .line {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        // hr {
+        //   width: 100%;
+        // }
+    }
+}
+
+footer .social {
+  a {
+    font-size: 20.83px;
+    margin: 0 15px;
+    color: #a8b6bc;
+    text-decoration: none !important;
+    &:hover {
+      color: #76d8c3;
+    }
+    &:active {
+      color: #ca6fa8;
+      transition: 0;
+    }
+  }
+}
+.social{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.endl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    .copy {
+        font-size: 13.54px;
+        color: #b8c6cd;
+        text-transform: uppercase;
+    }
+    .design {
+      font-size: 13.54px;
+      color: #78909c;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      span, a {
+        color: #30c6a5;
       }
     }
 }

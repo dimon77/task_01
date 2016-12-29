@@ -9412,20 +9412,195 @@ footer .col-box {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 77px;
+  padding-bottom: 63px;
+}
+footer .col {
+  width: 230px;
+}
+footer .col-big {
+  width: 353px;
 }
 footer .col .navbar-brand {
   color: #546e7a;
   font-size: 31.25px;
+  margin-left: -1px;
+  padding-left: 0;
+  width: 100%;
 }
 footer .col a {
   display: block;
   color: #a8b6bc;
   font-weight: 500;
   font-size: 13.54px;
+  margin-bottom: 3px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+footer .col .item {
+  text-decoration: none;
+  margin-bottom: 21px;
+}
+footer .col .item:hover {
+  text-decoration: none;
+}
+footer .col .item:hover .hdr {
+  text-decoration: underline;
+}
+footer .col .item .hdr {
+  text-decoration: none;
+  letter-spacing: 0.55px;
+}
+footer .col .item .date {
+  color: #77939f;
 }
 footer .col h4 {
   font-size: 18.75px;
   color: #546e7a;
   line-height: 1.556;
   font-weight: 700;
+  margin-bottom: 18px;
+  padding-top: 18px;
+}
+footer form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "MuseoSans";
+  margin-top: 11px;
+}
+footer form input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  background-color: #eaebed;
+  font-size: 16.67px;
+  font-weight: 300;
+  font-family: "MuseoSans";
+  padding: 12px 15px 13px 15px;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+     -moz-border-radius-topleft: 3px;
+          border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+     -moz-border-radius-bottomleft: 3px;
+          border-bottom-left-radius: 3px;
+  width: 234px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+footer form input[type="text"]::-webkit-input-placeholder {
+  color: #b0bec4;
+}
+footer form input[type="text"]::-moz-placeholder {
+  color: #b0bec4;
+}
+footer form input[type="text"]:-moz-placeholder {
+  color: #b0bec4;
+}
+footer form input[type="text"]:-ms-input-placeholder {
+  color: #b0bec4;
+}
+footer form input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  background-color: #76d8c3;
+  font-size: 16.67px;
+  font-weight: 500;
+  font-family: "MuseoSans";
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+     -moz-border-radius-topright: 3px;
+          border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+     -moz-border-radius-bottomright: 3px;
+          border-bottom-right-radius: 3px;
+  padding: 12px 15px 13px 15px;
+  color: #fff;
+}
+footer .line {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+footer .social a {
+  font-size: 20.83px;
+  margin: 0 15px;
+  color: #a8b6bc;
+  text-decoration: none !important;
+}
+footer .social a:hover {
+  color: #76d8c3;
+}
+footer .social a:active {
+  color: #ca6fa8;
+  -webkit-transition: 0;
+  -o-transition: 0;
+  -moz-transition: 0;
+  transition: 0;
+}
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+.endl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.endl .copy {
+  font-size: 13.54px;
+  color: #b8c6cd;
+  text-transform: uppercase;
+}
+.endl .design {
+  font-size: 13.54px;
+  color: #78909c;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+.endl .design span,
+.endl .design a {
+  color: #30c6a5;
 }
