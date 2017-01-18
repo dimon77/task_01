@@ -42,7 +42,9 @@
           </nav>
           <div class="container firstscreen">
               <div class="textbyh1">Tomar ki budget low, kom dame valo kamla chai ?</div>
-              <h1>Find Remote Workers For Your Project</h1>
+              <!-- <h1><span class="tjs">Find Remote Workers For Your Project</span></h1> -->
+              <!-- <h1><span class="">Find Remote Workers For Your Project</span></h1> -->
+              <h1><span class="tjs"></span></h1>
               <a href="javascript:void(0);" class="firstscreenbtn">
                 <div class="back">Get Started</div>
               </a>
@@ -237,6 +239,22 @@
                       <div class="bg" style="background-image: url(image/team1.jpg);">
                         <img src="image/logo-team1.png" alt="">
                         <div class="">Creative Dash</div>
+                        <div class="backcolor"></div>
+                        <div class="aftertext">Super heroes of web</div>
+                        <div class="aftertext">
+                          <a href="javascript:void(0);">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                          </a>
+                        </div>
                       </div>
                       <div class="text">
                         <div class="green">Full Time</div>
@@ -247,6 +265,13 @@
                       <div class="bg" style="background-image: url(image/team2.jpg);">
                         <img src="image/logo-team2.png" alt="">
                         <div class="">Unfold.co</div>
+                        <div class="backcolor"></div>
+                        <div class="aftertext">Make the impossible</div>
+                        <div class="aftertext">
+                          <a href="javascript:void(0);">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                        </div>
                       </div>
                       <div class="text">
                         <div class="green">Part Time</div>
@@ -413,6 +438,7 @@
         <script type="text/javascript" src="swipebox/js/jquery.swipebox.js"></script>
         <script type="text/javascript" src="material/js/material.min.js"></script>
         <script type="text/javascript" src="material/js/ripples.min.js"></script>
+        <!-- <script type="text/javascript" src="js/typed.js"></script> -->
 
         <script type="text/javascript">
             //нахождение ширины скролбара
@@ -470,6 +496,23 @@
             slidesToShow: 1,
             slidesToScroll: 1
           });
+        </script>
+        <script type="text/javascript" src="js/typed.js"></script>
+        <script>
+            $(function(){
+                $(".firstscreen .tjs").typed({
+                    strings: ["We are super unique website that was created by aliens, for people search.", "Find Remote Workers For Your Project"],
+                    typeSpeed: 80, // скорость набора
+                    backSpeed: 0, // скорость удаления текста
+                    startDelay: 0, // изначальная задержка перед набором
+                    backDelay: 1500, // пауза перед удалением текста
+                    loop: false, // повтор (true или false)
+                    loopCount: false, // число повтором, false = бесконечно
+                    showCursor: true,
+                    attr: null, // атрибут
+                    callback: function(){ } // функция, которая вызовется после окончания работы плагина
+                });
+            });
         </script>
 
     </body>

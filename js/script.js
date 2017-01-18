@@ -5,3 +5,9 @@ $(window).scroll(function () {
     $("nav").removeClass("nav__white");
   };
 });
+
+
+$(".btnright").click(function(e) {
+    e.preventDefault();
+    $(".about").addClass("about--act")
+})
