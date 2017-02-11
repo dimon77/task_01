@@ -8675,11 +8675,12 @@ nav.nav__white .signin {
   position: relative;
 }
 .select1 {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   width: 100%;
   top: -70px;
+  margin-bottom: -137px;
 }
 .screen-3 {
   padding: 0 15px;
@@ -8785,6 +8786,9 @@ nav.nav__white .signin {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .select1textblock {
   display: -webkit-box;
@@ -8818,6 +8822,7 @@ nav.nav__white .signin {
   font-weight: 500;
   font-size: 14.58px;
   letter-spacing: 0.3px;
+  cursor: pointer;
 }
 .greenbtn {
   border: none;
@@ -8830,6 +8835,39 @@ nav.nav__white .signin {
   font-size: 16.67px;
   line-height: normal;
   padding: 11px 27px;
+}
+.options {
+  display: none;
+  width: 100%;
+  padding-top: 20px;
+}
+.options--act {
+  display: block;
+}
+.options input[type="text"] {
+  color: #90a4ae;
+  font-size: 14.58px;
+  font-weight: 300;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  line-height: normal;
+  padding: 11px 24px 11px 14px;
+  width: 340px;
+  max-width: 38.9%;
+}
+.form-group .checkbox {
+  display: inline-block;
+  margin-right: 20px;
+}
+.form-group .radio {
+  display: inline-block;
+}
+.form-group .togglebutton {
+  display: inline-block;
+  margin-left: 30px;
 }
 .about {
   display: -webkit-box;
